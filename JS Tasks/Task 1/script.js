@@ -10,15 +10,11 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 ------------------------------------------------------------------- */
 
 
+document.querySelector('form').addEventListener('submit',(event) => {
+    event.preventDefault();
 
-function convertToGrams (event) {
-    const kgInputValue = event.target.value;
-};
+    const kiloValue = document.getElementById('search').value;
 
-document.getElementById('kgInput').addEventListener('input',function(e){
-            let kg= e.target.value;
-            let input = document.getElementById('Input');
-            let data = input.value;
             document.getElementById('gramsOutput').innerHTML= kg/0.0022046;
             document.getElementById('lbOutput').innerHTML= kg/2.2046;
             document.getElementById('ozOutput').innerHTML= kg*16;
