@@ -17,13 +17,14 @@
   background-color: #f1f1f1;
 }
 
-.btn {
+div {
+  margin: 1rem;
   width: 300px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-#btn__element {
+#clickme {
   width: 75%;
   padding: 15px 25px;
   background-color: #222;
@@ -32,24 +33,4 @@
   font-weight: bold;
   font-size: 2em;
   text-align: center;
-}
-
-#btn__element:hover {
-  cursor: pointer;
-  background-color: rgb(59, 59, 59);
-}
-
-#btn__state {
-  width: 25%;
-  padding: 15px 25px;
-  background-color: rgb(59, 59, 59);
-  border: #222;
-  color: #fff;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-}
-
-div {
-margin: 1rem; 
 }
