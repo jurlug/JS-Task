@@ -15,10 +15,9 @@ document.querySelector('form').addEventListener('submit', (event) => {
 
     const kiloValue = document.getElementById('search').value;
 
-            document.getElementById('gramst').innerHTML = kg / 0.0010000;
-            document.getElementById('lb').innerHTML= kg * 2.2046;
-            document.getElementById('oz').innerHTML= kg * 0.0010000;
-            document.getElementById('output').style.visibility='visible';
-
+            document.getElementById('grams').innerHTML =  kiloValue / 0.0010000; 
+            document.getElementById('lb').innerHTML = kiloValue * 2.2046;
+            document.getElementById('oz').innerHTML = kiloValue * 0.0010000;
+           
             
-        })
+        });
