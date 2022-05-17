@@ -10,17 +10,15 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 ------------------------------------------------------------------- */
 
 
-document.querySelector('form').addEventListener('submit',(event) => {
+document.querySelector('form').addEventListener('submit', (event) => {
     event.preventDefault();
 
     const kiloValue = document.getElementById('search').value;
 
-            document.getElementById('gramsOutput').innerHTML= kg/0.0022046;
-            document.getElementById('lbOutput').innerHTML= kg/2.2046;
-            document.getElementById('ozOutput').innerHTML= kg*16;
+            document.getElementById('gramst').innerHTML = kg / 0.0010000;
+            document.getElementById('lb').innerHTML= kg * 2.2046;
+            document.getElementById('oz').innerHTML= kg * 0.0010000;
             document.getElementById('output').style.visibility='visible';
 
-            if (data =='') {
-                document.getElementById('output').style.visibility='hidden';
-            }
-        });
+            
+        })
