@@ -29,13 +29,18 @@ function addUsersList(usersList) {
 
         const userAvatar = document.createElement('img');
         userAvatar.src = user.avatar_url;
-        userAvatar.style.width = '5rem'
-        userAvatar.style.height = '5rem'
+        userAvatar.style.width = '10rem'
+        userAvatar.style.height = '10rem'
         userAvatar.style.margin = 'auto'
-
+        
         const userCard = document.createElement('div');
         userCard.append(userAvatar, userId);
         userListContainer.append(userCard)
     })
 }
- fetchShowUsers();
+
+document.getElementById('btn').addEventListener('click', () => {
+    document.getElementById('message').innerText ='';
+    fetchShowUsers();
+})
+ 
