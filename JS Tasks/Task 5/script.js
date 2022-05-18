@@ -24,3 +24,11 @@ function filterDogOwers() {
   const dogOwners = users.filter(users => users.hasDog);
   console.log(dogOwners);
 }
+
+function filterAdults() {
+  const Adults = users.filter(users => users.age >=18);
+  console.log(Adults); 
+}
+
+filterDogOwers();
+filterAdults();
