@@ -28,9 +28,9 @@ function carsConttainer(carsList) {
 
         const carBrand = document.createElement('div');
         carBrand.innerText = car.brand;
-        carBrand.style.fontSize = '5rem';
+        carBrand.style.fontSize = '1rem';
         carBrand.style.color = 'red';
-        carBrand.style.margin = '5rem';         
+        carBrand.style.margin = '1rem';         
        
         const carModels = document.createElement('div');
         carModels.innerText = car.models;
