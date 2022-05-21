@@ -16,6 +16,12 @@ class Movie {
         this.budget = budget;
     }
     wasExpensive() {
-        
+        if (this.budget > 20) {
+            return true;
+        } else { return false };
     }
 }
+
+const addMovie = new Movie('Pablo Escobar last kilo', 'DEA agents', 21);
+
+console.log(addMovie.wasExpensive());
