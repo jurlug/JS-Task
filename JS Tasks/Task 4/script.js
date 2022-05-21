@@ -15,9 +15,8 @@ const fetchCarsList = async (brand, models) => {
     const response = await fetch(ENDPOINT);
     const carsList = await response.json();
 
-console.log(carsList);
-carsConttainer(carsList);
-
+    console.log(carsList);
+    carsConttainer(carsList);
 }
 
 function carsConttainer(carsList) {
@@ -30,12 +29,12 @@ function carsConttainer(carsList) {
         carBrand.innerText = car.brand;
         carBrand.style.fontSize = '1rem';
         carBrand.style.color = 'red';
-        carBrand.style.margin = '1rem';         
-       
+        carBrand.style.margin = '1rem';
+
         const carModels = document.createElement('div');
         carModels.innerText = car.models;
-        carModels.style.margin = '2 2 rem';
-        
+        carModels.style.margin = 'auto 2rem';
+
         addCarsList.append(carBrand, carModels);
     });
 }
